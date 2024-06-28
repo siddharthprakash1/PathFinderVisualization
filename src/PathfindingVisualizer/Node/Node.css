@@ -1,0 +1,62 @@
+.node {
+  width: 25px;
+  height: 25px;
+  outline: 1px solid rgba(175, 216, 248, 0.3);
+  display: inline-block;
+}
+
+.node-finish {
+  background-color: #ff4136;
+}
+
+.node-start {
+  background-color: #2ecc40;
+}
+
+.node-visited {
+  animation: visitedAnimation 1.5s ease-out forwards;
+}
+
+@keyframes visitedAnimation {
+  0% {
+    transform: scale(0.8);
+    background-color: rgba(0, 188, 212, 0.75);
+    border-radius: 0%;
+  }
+  50% {
+    transform: scale(1.1);
+    background-color: rgba(3, 169, 244, 0.75);
+    border-radius: 50%;
+  }
+  100% {
+    transform: scale(1);
+    background-color: rgba(63, 81, 181, 0.75);
+    border-radius: 10%;
+  }
+}
+
+.node-wall {
+  background-color: #34495e;
+}
+
+.node-shortest-path {
+  animation: shortestPath 1.5s ease-out forwards;
+}
+
+@keyframes shortestPath {
+  0% {
+    transform: scale(0.6);
+    background-color: #ffeb3b;
+    border-radius: 0%;
+  }
+  50% {
+    transform: scale(1.2);
+    background-color: #ffc107;
+    border-radius: 50%;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #ff9800;
+    border-radius: 10%;
+  }
+}

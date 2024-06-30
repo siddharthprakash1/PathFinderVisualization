@@ -60,11 +60,11 @@ Ensure you have the following installed on your local development machine:
 
 ### Dijkstra's Algorithm
 
-Dijkstra's Algorithm is a graph search algorithm that finds the shortest path between a starting node and all other nodes in the graph. It guarantees the shortest path in a weighted graph without negative weights.
+Dijkstra's Algorithm is a graph search algorithm that finds the shortest path between a starting node and all other nodes in the graph. It guarantees the shortest path in a weighted graph without negative weights. The algorithm works by iteratively selecting the node with the smallest known distance from the start node, updating the distances to its neighboring nodes, and marking the node as "visited." This process continues until the shortest path to the target node is found.
 
 ### A* Algorithm
 
-A* Algorithm is an extension of Dijkstra's Algorithm that uses heuristics to improve performance. It finds the shortest path by considering both the cost to reach the node and the estimated cost to reach the goal.
+A* Algorithm is an extension of Dijkstra's Algorithm that uses heuristics to improve performance. It finds the shortest path by considering both the cost to reach the node and the estimated cost to reach the goal. The algorithm maintains two cost values for each node: the actual cost from the start node and the estimated cost to the goal (heuristic). By prioritizing nodes based on the sum of these costs, A* can often find the shortest path more efficiently than Dijkstra's Algorithm, especially in large graphs with many nodes.
 
 ## Contributing
 
@@ -81,4 +81,3 @@ This project is licensed under the MIT License.
 ## Contact
 
 For any inquiries, please contact me at [iamsid0011@gmail.com].
-
